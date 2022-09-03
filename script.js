@@ -36,18 +36,15 @@ const playRound = (playerSelection, computerSelection) => {
     playerScore++
     return `Scissors beats Paper. You win!`
   }
-  // else {
-  //   return console.log(`Invalid input`)
-  // }
 }
 const game = () => {
   for (let i = 0; i < 5; i++) {
     const playerSelection = prompt(`Make your choice. Rock, paper, or scissors?`).toLowerCase()
     if (playerSelection != `rock` && playerSelection != `paper` && playerSelection != `scissors`) {
-      alert(`Invalid input. Try again!`), i--
-    }
+      alert(`Invalid input`), i--
+    } 
     else {
-      let roundResult = playRound(playerSelection, computerPlay());
+      playRound;
     }
     const computerSelection = computerPlay()
     playRound(playerSelection, computerSelection)
